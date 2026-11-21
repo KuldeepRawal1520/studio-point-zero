@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { ReactNode } from "react";
 import { studio } from "@/lib/studio";
 import { Reveal } from "./motion";
+import { SocialLinks } from "./social-links";
 
 export function EditorialPhoto({ src, alt, position = "50% 50%" }: { src: string; alt: string; position?: string }) {
   return (
@@ -39,6 +40,7 @@ export function Footer() {
       <Link href="/" className="wordmark">STUDIO <span>POINT ZERO</span></Link>
       <p>{studio.location}</p>
       <Link href="/contact" className="text-link">Contact the studio</Link>
+      <SocialLinks />
       <p className="demo-imagery-note">Selected imagery is for design demonstration purposes. Original Studio Point Zero project photography will be added soon.</p>
     </footer>
   );

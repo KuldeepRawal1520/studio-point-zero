@@ -59,3 +59,12 @@
 .gallery-image { overflow:hidden; }.gallery-image + figcaption { color:var(--muted); font-size:.8rem; padding-top:.75rem; }
 .footer { flex-wrap:wrap; }.footer .demo-imagery-note { flex-basis:100%; max-width:52rem; font-size:.8rem; line-height:1.7; color:var(--muted); margin-top:1rem; }
 @media(max-width:720px) { .editorial-photo { aspect-ratio:5 / 4; }.footer .demo-imagery-note { flex-basis:auto; }.project-cover { aspect-ratio:5 / 4; } }
+/* Official studio social profiles */
+.social-links { display:flex; align-items:center; flex-wrap:wrap; gap:.4rem; }
+.social-link { display:inline-flex; align-items:center; justify-content:center; gap:.55rem; min-width:44px; min-height:44px; color:var(--muted); border-radius:50%; transition:color .2s ease,background-color .2s ease,transform .2s ease; }
+.social-link svg { flex:none; }
+.social-link:hover { color:var(--ink); background:#e4dfd3; transform:translateY(-2px); }
+.social-links-labelled { gap:.35rem .8rem; }
+.social-links-labelled .social-link { border-radius:0; justify-content:flex-start; padding-inline:.25rem; font-size:.85rem; }
+.contact-social { border-top:1px solid #cfc5b2; margin-top:1.5rem; padding-top:1.3rem; }
+.contact-social h3 { font-family:var(--body-type),Arial,sans-serif; font-size:.8rem; line-height:1.6; letter-spacing:0; color:var(--muted); margin-bottom:.5rem; }

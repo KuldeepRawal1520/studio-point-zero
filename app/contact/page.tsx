@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EnquiryForm } from "@/components/enquiry-form";
+import { SocialLinks } from "@/components/social-links";
 import { studio } from "@/lib/studio";
 
 export const metadata: Metadata = { title: "Contact", description: "Contact Studio Point Zero about interior design and turnkey solutions in Ahmedabad." };
@@ -26,7 +27,7 @@ export default function ContactPage() {
             <p>Prefer a personal conversation?</p>
             {phone && <a href={`tel:${phone.replace(/[^+\d]/g, "")}`}>{phone}</a>}
             {email && <a href={`mailto:${email}`}>{email}</a>}
-          </div></div>
+          </div><section className="contact-social" aria-labelledby="contact-social-heading"><h3 id="contact-social-heading">Find us online</h3><SocialLinks labelled /></section></div>
         </section>
       </div>
     </>
