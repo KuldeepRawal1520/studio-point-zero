@@ -5,6 +5,7 @@ import { Footer } from "@/components/editorial";
 import { Navigation } from "@/components/navigation";
 import { siteUrl, studio } from "@/lib/studio";
 import "./globals.css";
+import "./home-opening.css";
 
 const bodyFont = localFont({
   src: "../node_modules/@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2",

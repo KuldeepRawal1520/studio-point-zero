@@ -1,29 +1,15 @@
 import Link from "next/link";
-import { ArchitecturalScene } from "@/components/architectural-scene";
+import { HomeOpening } from "@/components/home-opening";
 import { Consultation, Placeholder } from "@/components/editorial";
 import { Reveal } from "@/components/motion";
 import { ProjectGrid } from "@/components/projects";
 import { projects } from "@/lib/projects";
-import { journey, services, studio } from "@/lib/studio";
+import { journey, services } from "@/lib/studio";
 
 export default function Home() {
   return (
     <>
-      <section className="hero">
-        <ArchitecturalScene />
-        <div className="wrap hero-content">
-          <p className="eyebrow">Interior design & turnkey solutions · Ahmedabad</p>
-          <h1>A feeling.<br /> A space.<br /><em>Entirely you.</em></h1>
-          <p className="hero-description">Thoughtful interiors. Personal by design.<br />From the first idea to the final detail.</p>
-          <Link href="/contact" className="button">Begin your space</Link>
-        </div>
-      </section>
-      <section className="wrap section">
-        <Reveal className="split">
-          <div><p className="eyebrow">The studio</p><h2>Begin with<br /> the way you live.</h2></div>
-          <div className="body-copy"><p>{studio.description} Each brief begins with the people who use a space and the routines it needs to support.</p><Link className="text-link" href="/about">About Studio Point Zero</Link></div>
-        </Reveal>
-      </section>
+      <HomeOpening />
       <section className="wrap section section-rule">
         <Reveal className="section-heading"><div><p className="eyebrow">Portfolio</p><h2>Featured projects</h2></div><Link className="text-link" href="/projects">View all categories</Link></Reveal>
         <ProjectGrid projects={projects.slice(0, 2)} asymmetric />
