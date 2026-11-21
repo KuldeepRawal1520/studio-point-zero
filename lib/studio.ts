@@ -2,13 +2,16 @@ export const studio = {
   name: "Studio Point Zero",
   location: "Ahmedabad, India",
   description: "An interior design and turnkey solutions studio based in Ahmedabad, India.",
-  phone: process.env.STUDIO_PHONE?.trim(),
-  email: process.env.STUDIO_EMAIL?.trim(),
-  whatsapp: process.env.STUDIO_WHATSAPP?.replace(/\D/g, ""),
-  mapsUrl: process.env.STUDIO_MAPS_URL?.trim(),
+  phone: process.env.STUDIO_PHONE?.trim() || "+91 8488043249",
+  email: process.env.STUDIO_EMAIL?.trim() || "design.studiopoint0@gmail.com",
+  whatsapp: process.env.STUDIO_WHATSAPP?.replace(/\D/g, "") || "918488043249",
+  mapsUrl: process.env.STUDIO_MAPS_URL?.trim() || "https://www.google.com/maps/search/?api=1&query=A%2F436+Sun+Westbank+Ashram+Road+Ahmedabad",
+  address: "A/436 Sun Westbank, near Vallabhsadan, Ashram Road, Ahmedabad",
+  hours: "10:00–17:00",
 };
 
 export const services = [
+  { name: "Residential construction", description: "Residential construction planned around the way you want to live." },
   { name: "Residential interiors", description: "Consider how each room supports the rhythms of everyday life, from the first floor plan to the finishing details." },
   { name: "Turnkey interior solutions", description: "Bring design decisions, materials and site execution into a single project brief." },
   { name: "Custom furniture & modular kitchens", description: "Shape storage, work surfaces and built-in furniture around the dimensions of the room and the way it is used." },

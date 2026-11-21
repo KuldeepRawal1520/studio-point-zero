@@ -15,6 +15,8 @@ export default function ContactPage() {
         <div className="contact-details">
           <h2>Studio enquiries</h2>
           <p>{studio.location}</p>
+          <p className="lede">{studio.address}</p>
+          <p>Studio hours · {studio.hours}</p>
           <ul className="contact-links">
             {phone && <li><a className="text-link" href={`tel:${phone.replace(/[^+\d]/g, "")}`}>{phone}</a></li>}
             {email && <li><a className="text-link" href={`mailto:${email}`}>{email}</a></li>}

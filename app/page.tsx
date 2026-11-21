@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArchitecturalScene } from "@/components/architectural-scene";
 import { Consultation, Placeholder } from "@/components/editorial";
 import { Reveal } from "@/components/motion";
 import { ProjectGrid } from "@/components/projects";
@@ -9,11 +10,12 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <Placeholder className="hero-art" label="Hero photography placeholder" />
+        <ArchitecturalScene />
         <div className="wrap hero-content">
           <p className="eyebrow">Interior design & turnkey solutions · Ahmedabad</p>
-          <h1>Spaces shaped<br /> <em>around you.</em></h1>
-          <Link href="/projects" className="button button-light">Explore the portfolio</Link>
+          <h1>A feeling.<br /> A space.<br /><em>Entirely you.</em></h1>
+          <p className="hero-description">Thoughtful interiors. Personal by design.<br />From the first idea to the final detail.</p>
+          <Link href="/contact" className="button">Begin your space</Link>
         </div>
       </section>
       <section className="wrap section">
@@ -28,7 +30,7 @@ export default function Home() {
       </section>
       <section className="tinted">
         <Reveal className="wrap section split philosophy">
-          <Placeholder tone="olive" label="Material study placeholder" />
+          <div className="material-composition" aria-label="Abstract composition of stone, timber and textured plaster"><div className="material-stone" /><div className="material-wood" /><div className="material-disc" /><span>A dialogue of textures</span></div>
           <div><p className="eyebrow">Design philosophy</p><h2>Make room for the essentials.</h2><p className="lede">Light, proportion and material can change how a room feels. We use them to give the things you do every day a place of their own.</p></div>
         </Reveal>
       </section>
@@ -45,7 +47,7 @@ export default function Home() {
       </section>
       <section className="wrap section section-rule split">
         <Placeholder tone="clay" label="Founder portrait placeholder" />
-        <div><p className="eyebrow">The founder</p><h2>Meet the studio.</h2><p className="lede">Founder profile forthcoming.</p><Link href="/about#founder" className="text-link">Visit the founder section</Link></div>
+        <div><p className="eyebrow">The founder</p><h2>Nandini Shah</h2><p className="founder-title">FOUNDER & PRINCIPLE ARCHITECT</p><p className="lede">Fascinated by how spaces influence everyday life, Nandini founded Studio Point Zero in 2022. Every home is approached with the care of making her own.</p><Link href="/about#founder" className="text-link">Discover the studio story</Link></div>
       </section>
       <Consultation />
     </>

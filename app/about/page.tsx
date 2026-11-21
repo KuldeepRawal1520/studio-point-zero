@@ -22,7 +22,7 @@ export default function AboutPage() {
       </div></section>
       <section id="founder" className="wrap section split">
         <Placeholder tone="clay" label="Founder portrait placeholder" />
-        <div><p className="eyebrow">Founder</p><h2>Founder profile</h2><p className="lede">Profile forthcoming.</p></div>
+        <div><p className="eyebrow">Founder</p><h2>Nandini Shah</h2><p className="founder-title">FOUNDER & PRINCIPLE ARCHITECT</p><p className="lede">Nandini founded Studio Point Zero in 2022 after completing her academics in the field. Her fascination with the way spaces influence how we live, feel and experience everyday life continues to shape the studio.</p><p>Her approach is rooted in treating each home as her own, with transparency and honesty throughout.</p></div>
       </section>
       <Consultation />
     </>
