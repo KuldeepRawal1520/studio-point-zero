@@ -33,15 +33,16 @@ export function MaterialExperience() {
               rotateX.set((.5 - (event.clientY - rect.top) / rect.height) * 10);
               rotateY.set(((event.clientX - rect.left) / rect.width - .5) * 12);
             }} onPointerLeave={() => { rotateX.set(0); rotateY.set(0); }}>
-              <motion.div className={`material-sample sample-${material.id}`} style={{ rotateX: reduced ? 0 : springX, rotateY: reduced ? 0 : springY }}>
+              <motion.div className={`material-sample sample-${material.id}`} style={{ rotateX: reduced ? 0 : springX, rotateY: reduced ? 0 : springY, boxShadow: `${35 - light * .7}px 30px ${45 - light * .25}px #080c0999` }}>
                 <div className="sample-texture" />
                 {material.id === "timber" && <Image className="sample-photograph" src="https://images.pexels.com/photos/36081877/pexels-photo-36081877.jpeg" alt="" fill sizes="(max-width: 720px) 75vw, 40vw" />}
                 {material.id === "fabric" && <Image className="sample-photograph" src="https://images.pexels.com/photos/7232409/pexels-photo-7232409.jpeg" alt="" fill sizes="(max-width: 720px) 75vw, 40vw" />}
-                <div className="sample-illumination" style={{ background: `linear-gradient(${75 + light}deg, #ffffff00 5%, #fff5d7${Math.round(20 + light * .45).toString(16).padStart(2, "0")} 48%, #15100d55 100%)` }} />
+                <div className="sample-illumination" style={{ background: `linear-gradient(${40 + light * 1.1}deg, rgba(6,12,9,${.65 - light * .004}) 0%, transparent ${25 + light * .3}%, rgba(255,239,192,${.15 + light * .004}) 70%, rgba(255,248,226,.65) 100%)` }} />
+                <div className="sample-light-beam" style={{ left: `${light * .65}%`, opacity: .15 + light * .004 }} />
                 <span className="sample-edge" />
               </motion.div>
             </div>
-            <div className="light-control"><label htmlFor="material-light">Explore the light</label><input id="material-light" type="range" min="0" max="100" value={light} aria-valuetext={`${light}% light angle`} onChange={(event) => setLight(Number(event.target.value))} /><span>Soft / Raking</span></div>
+            <div className="light-control"><label htmlFor="material-light">Explore the light</label><input id="material-light" type="range" min="0" max="100" value={light} aria-valuetext={`${light}% directional light`} onChange={(event) => setLight(Number(event.target.value))} /><output htmlFor="material-light">{light < 35 ? "Soft shadow" : light > 70 ? "Direct sunlight" : "Filtered light"}</output></div>
             <p className="material-disclaimer">Illustrative finish studies · final samples vary</p>
             {material.id === "timber" && <a className="texture-credit" href="https://www.pexels.com/photo/close-up-of-wooden-texture-with-detailed-grain-patterns-36081877/">Texture · Natalia Sevruk / Pexels</a>}
             {material.id === "fabric" && <a className="texture-credit" href="https://www.pexels.com/photo/close-up-shot-of-a-beige-textile-7232409/">Texture · Artem Podrez / Pexels</a>}

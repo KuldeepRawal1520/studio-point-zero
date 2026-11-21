@@ -10,8 +10,8 @@ export function EnquiryForm() {
 
   return (
     <form action={action} className="enquiry-form" aria-describedby="delivery-status">
-      <h2>Project enquiry</h2>
-      <p id="delivery-status">Online delivery is currently unavailable.</p>
+      <h2>Tell us about<br /><em>your space.</em></h2>
+      <p id="delivery-status">You can prepare your brief here. Online delivery is currently unavailable.</p>
       {(["name", "email", "message"] as const).map((field) => {
         const { label, maxLength } = enquiryFields[field];
         const error = state.errors?.[field];

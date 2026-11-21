@@ -17,13 +17,13 @@ export function HomeOpening() {
           <p>Thoughtfully designed.<br />Deeply personal.</p>
           <Link href="/contact" className="cinema-link">Begin a conversation</Link>
         </div>
-        <div className="cinema-footnote wrap"><a href="#studio-philosophy">Discover the studio</a><span>Concept imagery · <a href="https://www.pexels.com/photo/modern-minimalist-living-room-with-beige-sofa-28576394/">Dmitry Zvolskiy / Pexels</a></span></div>
+        <div className="cinema-footnote wrap"><a href="#studio-philosophy">Discover the studio</a></div>
       </section>
       <section className="studio-editorial wrap" id="studio-philosophy" aria-labelledby="philosophy-heading">
         <div className="editorial-intro"><p className="eyebrow">A personal approach to space</p><h2 id="philosophy-heading">Your home.<br /><em>Our own kind of care.</em></h2></div>
-        <figure className="editorial-main-image"><div><Image src={conceptPhoto} alt="A tactile palette of textured plaster, soft upholstery and natural stone in warm daylight" fill sizes="(max-width: 720px) 90vw, 48vw" quality={80} /></div><figcaption>Concept imagery · Dmitry Zvolskiy / Pexels</figcaption></figure>
+        <figure className="editorial-main-image"><div><Image src={conceptPhoto} alt="Concept interior with textured plaster, soft upholstery and natural stone in warm daylight" fill sizes="(max-width: 720px) 90vw, 48vw" quality={80} /></div></figure>
         <div className="editorial-story"><span className="editorial-rule" aria-hidden="true" /><p className="editorial-lead">A home is often made once in a lifetime. It deserves to be treated like our own.</p><p>That belief guides Nandini Shah and Studio Point Zero. From the way a room works to the detail your hand meets every day, we approach each decision with care, transparency and honesty.</p><Link href="/about" className="text-link">The story behind the studio</Link></div>
-        <figure className="editorial-detail-image"><div><Image src={detailPhoto} alt="Warm sunlight reveals the weave of an ivory sofa and the grain of its timber frame" fill sizes="(max-width: 720px) 45vw, 23vw" quality={80} /></div><figcaption>Concept imagery · <a href="https://www.pexels.com/photo/modern-interior-with-beige-sofa-and-abstract-art-37872783/">Nihar Manyalli / Pexels</a></figcaption></figure>
+        <figure className="editorial-detail-image"><div><Image src={detailPhoto} alt="Concept interior detail with warm sunlight on an ivory sofa and timber frame" fill sizes="(max-width: 720px) 45vw, 23vw" quality={80} /></div></figure>
         <p className="editorial-closing">Function with intention.<br />Beauty with meaning.</p>
       </section>
       <MaterialExperience />

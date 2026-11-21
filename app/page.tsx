@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HomeOpening } from "@/components/home-opening";
+import { SpatialStudy } from "@/components/spatial-study";
 import { Consultation, Placeholder } from "@/components/editorial";
 import { Reveal } from "@/components/motion";
 import { ProjectGrid } from "@/components/projects";
@@ -14,12 +15,7 @@ export default function Home() {
         <Reveal className="section-heading"><div><p className="eyebrow">Portfolio</p><h2>Featured projects</h2></div><Link className="text-link" href="/projects">View all categories</Link></Reveal>
         <ProjectGrid projects={projects.slice(0, 2)} asymmetric />
       </section>
-      <section className="tinted">
-        <Reveal className="wrap section split philosophy">
-          <div className="material-composition" aria-label="Abstract composition of stone, timber and textured plaster"><div className="material-stone" /><div className="material-wood" /><div className="material-disc" /><span>A dialogue of textures</span></div>
-          <div><p className="eyebrow">Design philosophy</p><h2>Make room for the essentials.</h2><p className="lede">Light, proportion and material can change how a room feels. We use them to give the things you do every day a place of their own.</p></div>
-        </Reveal>
-      </section>
+      <SpatialStudy />
       <section className="wrap section split">
         <div><p className="eyebrow">Services</p><h2>Design through execution.</h2></div>
         <div>
