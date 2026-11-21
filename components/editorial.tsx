@@ -1,13 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { ReactNode } from "react";
 import { studio } from "@/lib/studio";
 import { Reveal } from "./motion";
 
-export function Placeholder({ tone = "sand", label = "Photography placeholder", className = "" }: { tone?: string; label?: string; className?: string }) {
+export function EditorialPhoto({ src, alt, position = "50% 50%" }: { src: string; alt: string; position?: string }) {
   return (
-    <figure className={`placeholder placeholder-${tone} ${className}`}>
-      <span className="placeholder-plane" aria-hidden="true" />
-      <figcaption>{label}</figcaption>
+    <figure className="editorial-photo">
+      <Image src={src} alt={alt} fill sizes="(max-width: 720px) 90vw, 45vw" style={{ objectPosition: position }} />
     </figure>
   );
 }
@@ -39,6 +39,7 @@ export function Footer() {
       <Link href="/" className="wordmark">STUDIO <span>POINT ZERO</span></Link>
       <p>{studio.location}</p>
       <Link href="/contact" className="text-link">Contact the studio</Link>
+      <p className="demo-imagery-note">Selected imagery is for design demonstration purposes. Original Studio Point Zero project photography will be added soon.</p>
     </footer>
   );
 }

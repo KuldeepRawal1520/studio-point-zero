@@ -13,11 +13,10 @@ export function ProjectGrid({ projects, asymmetric = false }: { projects: Projec
         return (
           <li key={project.slug}>
             <Link className="project-card" href={`/projects/${project.slug}`}>
-              <div className={`placeholder placeholder-${project.tone} project-cover`}>
-                {cover ? <Image src={cover.src} alt={cover.alt} fill sizes="(max-width: 720px) 100vw, 46vw" />
-                  : <><span className="placeholder-plane" aria-hidden="true" /><span className="media-label">Photography placeholder</span></>}
+              <div className="portfolio-photo project-cover">
+                <Image src={cover.src} alt={cover.alt} fill sizes="(max-width: 720px) 90vw, 46vw" style={{ objectPosition: cover.position }} />
               </div>
-              <p className="eyebrow">{project.category}</p>
+              <p className="eyebrow">{project.category}{project.conceptual ? " · Conceptual example" : ""}</p>
               <h3>{project.title}</h3>
             </Link>
           </li>
@@ -50,7 +49,7 @@ export function Gallery({ images }: { images: ProjectImage[] }) {
   return (
     <section aria-label="Project gallery">
       <figure>
-        <div className="gallery-image"><Image src={image.src} alt={image.alt} fill sizes="(max-width: 1240px) 92vw, 1160px" /></div>
+        <div className="gallery-image"><Image src={image.src} alt={image.alt} fill sizes="(max-width: 1240px) 92vw, 1160px" style={{ objectPosition: image.position }} /></div>
         {image.caption && <figcaption>{image.caption}</figcaption>}
       </figure>
       {images.length > 1 && (

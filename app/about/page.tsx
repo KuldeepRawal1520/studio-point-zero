@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Consultation, PageIntro, Placeholder } from "@/components/editorial";
+import { Consultation, PageIntro, EditorialPhoto } from "@/components/editorial";
+import { demoImages } from "@/lib/demo-images";
 import { studio } from "@/lib/studio";
 
 export const metadata: Metadata = { title: "About", description: studio.description };
@@ -9,7 +10,7 @@ export default function AboutPage() {
     <>
       <PageIntro label="The studio" title="Studio Point Zero">{studio.description}</PageIntro>
       <section className="wrap section project-index split">
-        <Placeholder tone="olive" label="Studio photography placeholder" />
+        <EditorialPhoto src={demoImages.studio} alt="Concept interior with an ivory sofa, timber flooring and refined linear wall lights" position="50% 65%" />
         <div><p className="eyebrow">Design philosophy</p><h2>Start with the space.</h2><p className="lede">How daylight moves through a room, where things are kept and how people move from one space to the next are questions that shape the design.</p></div>
       </section>
       <section className="tinted"><div className="wrap section">
@@ -21,7 +22,7 @@ export default function AboutPage() {
         </ul>
       </div></section>
       <section id="founder" className="wrap section split">
-        <Placeholder tone="clay" label="Founder portrait placeholder" />
+        <EditorialPhoto src={demoImages.cabinetry} alt="Illustrative joinery detail with full-height timber cabinetry and a stone splashback" position="50% 50%" />
         <div><p className="eyebrow">Founder</p><h2>Nandini Shah</h2><p className="founder-title">FOUNDER & PRINCIPLE ARCHITECT</p><p className="lede">Nandini founded Studio Point Zero in 2022 after completing her academics in the field. Her fascination with the way spaces influence how we live, feel and experience everyday life continues to shape the studio.</p><p>Her approach is rooted in treating each home as her own, with transparency and honesty throughout.</p></div>
       </section>
       <Consultation />

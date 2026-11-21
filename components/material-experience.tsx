@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { demoImages } from "@/lib/demo-images";
 import { motion, useMotionValue, useSpring, useReducedMotion } from "motion/react";
 
 const materials = [
@@ -35,8 +36,8 @@ export function MaterialExperience() {
             }} onPointerLeave={() => { rotateX.set(0); rotateY.set(0); }}>
               <motion.div className={`material-sample sample-${material.id}`} style={{ rotateX: reduced ? 0 : springX, rotateY: reduced ? 0 : springY, boxShadow: `${35 - light * .7}px 30px ${45 - light * .25}px #080c0999` }}>
                 <div className="sample-texture" />
-                {material.id === "timber" && <Image className="sample-photograph" src="https://images.pexels.com/photos/36081877/pexels-photo-36081877.jpeg" alt="" fill sizes="(max-width: 720px) 75vw, 40vw" />}
-                {material.id === "fabric" && <Image className="sample-photograph" src="https://images.pexels.com/photos/7232409/pexels-photo-7232409.jpeg" alt="" fill sizes="(max-width: 720px) 75vw, 40vw" />}
+                {material.id === "timber" && <Image className="sample-photograph" src={demoImages.timber} alt="" fill sizes="(max-width: 720px) 75vw, 40vw" />}
+                {material.id === "fabric" && <Image className="sample-photograph" src={demoImages.fabric} alt="" fill sizes="(max-width: 720px) 75vw, 40vw" />}
                 <div className="sample-illumination" style={{ background: `linear-gradient(${40 + light * 1.1}deg, rgba(6,12,9,${.65 - light * .004}) 0%, transparent ${25 + light * .3}%, rgba(255,239,192,${.15 + light * .004}) 70%, rgba(255,248,226,.65) 100%)` }} />
                 <div className="sample-light-beam" style={{ left: `${light * .65}%`, opacity: .15 + light * .004 }} />
                 <span className="sample-edge" />

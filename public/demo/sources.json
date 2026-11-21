@@ -1,0 +1,171 @@
+{
+  "purpose": "Temporary client-presentation imagery. These photographs do not represent completed Studio Point Zero projects or the studio's premises.",
+  "verifiedOn": "2026-11-20",
+  "assets": [
+    {
+      "key": "kitchen",
+      "id": 36777559,
+      "file": "timber-kitchen-stone-island",
+      "author": "Curtis Adams",
+      "placement": "Residential gallery",
+      "width": 1600,
+      "path": "/demo/timber-kitchen-stone-island.webp",
+      "source": "https://www.pexels.com/photo/36777559/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "bedroom",
+      "id": 32025945,
+      "file": "neutral-bedroom-timber-furniture",
+      "author": "Christopher Moon",
+      "placement": "Residential gallery",
+      "width": 1600,
+      "path": "/demo/neutral-bedroom-timber-furniture.webp",
+      "source": "https://www.pexels.com/photo/32025945/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "office",
+      "id": 33284063,
+      "file": "warm-office-sculptural-lighting",
+      "author": "Eddson Lens",
+      "placement": "Commercial portfolio cover",
+      "width": 1600,
+      "path": "/demo/warm-office-sculptural-lighting.webp",
+      "source": "https://www.pexels.com/photo/33284063/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "cafe",
+      "id": 29394569,
+      "file": "daylit-contemporary-cafe",
+      "author": "Sydney Sang",
+      "placement": "Hospitality portfolio cover",
+      "width": 1600,
+      "path": "/demo/daylit-contemporary-cafe.webp",
+      "source": "https://www.pexels.com/photo/29394569/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "desk",
+      "id": 4231428,
+      "file": "window-side-timber-desk",
+      "author": "Taryn Elliott",
+      "placement": "Home founder section, illustrative workspace",
+      "width": 1400,
+      "path": "/demo/window-side-timber-desk.webp",
+      "source": "https://www.pexels.com/photo/4231428/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "villa",
+      "id": 40808030,
+      "file": "contemporary-villa-lounge",
+      "author": "Alef Morais",
+      "placement": "Studio philosophy editorial image",
+      "width": 1600,
+      "path": "/demo/contemporary-villa-lounge.webp",
+      "source": "https://www.pexels.com/photo/40808030/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "cabinetry",
+      "id": 15220866,
+      "file": "contemporary-kitchen-cabinetry",
+      "author": "Hiba Q. Omar",
+      "placement": "About founder section, illustrative joinery",
+      "width": 1600,
+      "path": "/demo/contemporary-kitchen-cabinetry.webp",
+      "source": "https://www.pexels.com/photo/15220866/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "lounge",
+      "id": 30212568,
+      "file": "modern-office-lounge-daylight",
+      "author": "Andretti Brown",
+      "placement": "Commercial gallery",
+      "width": 1600,
+      "path": "/demo/modern-office-lounge-daylight.webp",
+      "source": "https://www.pexels.com/photo/30212568/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "hero",
+      "id": 28576394,
+      "file": "sunlit-sculptural-sofa-stone-table",
+      "author": "Dmitry Zvolskiy",
+      "placement": "Homepage hero",
+      "width": 2200,
+      "path": "/demo/sunlit-sculptural-sofa-stone-table.webp",
+      "source": "https://www.pexels.com/photo/28576394/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "detail",
+      "id": 37872783,
+      "file": "sunlit-sofa-timber-detail",
+      "author": "Nihar Manyalli",
+      "placement": "Homepage editorial detail",
+      "width": 1200,
+      "path": "/demo/sunlit-sofa-timber-detail.webp",
+      "source": "https://www.pexels.com/photo/37872783/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "timber",
+      "id": 36081877,
+      "file": "natural-timber-grain-texture",
+      "author": "Natalia Sevruk",
+      "placement": "Interactive material study",
+      "width": 1000,
+      "path": "/demo/natural-timber-grain-texture.webp",
+      "source": "https://www.pexels.com/photo/36081877/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "fabric",
+      "id": 7232409,
+      "file": "woven-linen-texture",
+      "author": "Artem Podrez",
+      "placement": "Interactive material study",
+      "width": 1000,
+      "path": "/demo/woven-linen-texture.webp",
+      "source": "https://www.pexels.com/photo/7232409/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "studio",
+      "id": 33054910,
+      "file": "beige-lounge-refined-wall-lighting",
+      "author": "Mateusz Pielech",
+      "placement": "About studio editorial image",
+      "width": 1600,
+      "path": "/demo/beige-lounge-refined-wall-lighting.webp",
+      "source": "https://www.pexels.com/photo/33054910/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "key": "residential",
+      "id": "5T_XETRABHs",
+      "file": "sunlit-linen-lounge-teak-table",
+      "author": "Kevin Lieder",
+      "placement": "Residential portfolio cover",
+      "width": 1800,
+      "source": "https://unsplash.com/photos/cozy-living-room-with-sunlight-streaming-through-sheer-curtains-5T_XETRABHs",
+      "license": "https://unsplash.com/license",
+      "path": "/demo/sunlit-linen-lounge-teak-table.webp"
+    },
+    {
+      "key": "restaurant",
+      "id": 17584116,
+      "file": "sunlit-timber-dining-space",
+      "author": "Emre Akyol",
+      "placement": "Hospitality gallery",
+      "width": 1600,
+      "path": "/demo/sunlit-timber-dining-space.webp",
+      "source": "https://www.pexels.com/photo/17584116/",
+      "license": "https://www.pexels.com/license/"
+    }
+  ]
+}
